@@ -852,6 +852,8 @@ export default function App() {
               onUtmChange={handleUtmChange}
               dateRange={normalizedRange}
               isDark={darkMode === 'dark'}
+              showProductFilter={hasPermission('product_filter')}
+              showUtmFilter={isAuthor}
             />
           </Box>
         </Box>
