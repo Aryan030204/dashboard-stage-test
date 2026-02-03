@@ -60,9 +60,9 @@ import { GlassChip } from './ui/GlassChip.jsx';
 const DATE_PRESETS = [
   { label: 'Today', getValue: () => [dayjs().startOf('day'), dayjs().startOf('day')], group: 1 },
   { label: 'Yesterday', getValue: () => [dayjs().subtract(1, 'day').startOf('day'), dayjs().subtract(1, 'day').startOf('day')], group: 1 },
-  { label: 'Last 7 days', getValue: () => [dayjs().subtract(6, 'day').startOf('day'), dayjs().startOf('day')], group: 2 },
-  { label: 'Last 30 days', getValue: () => [dayjs().subtract(29, 'day').startOf('day'), dayjs().startOf('day')], group: 2 },
-  { label: 'Last 90 days', getValue: () => [dayjs().subtract(89, 'day').startOf('day'), dayjs().startOf('day')], group: 2 },
+  { label: 'Last 7 days', getValue: () => [dayjs().subtract(7, 'day').startOf('day'), dayjs().subtract(1, 'day').startOf('day')], group: 2 },
+  { label: 'Last 30 days', getValue: () => [dayjs().subtract(30, 'day').startOf('day'), dayjs().subtract(1, 'day').startOf('day')], group: 2 },
+  { label: 'Last 90 days', getValue: () => [dayjs().subtract(90, 'day').startOf('day'), dayjs().subtract(1, 'day').startOf('day')], group: 2 },
 ];
 
 function formatNumber(val) {
